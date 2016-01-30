@@ -2,9 +2,11 @@ package com.example.android.sunshine.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.text.format.Time;
 import android.util.Log;
@@ -31,7 +33,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ForecastFragment extends Fragment {
@@ -58,14 +59,18 @@ public class ForecastFragment extends Fragment {
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
+
+        // if refresh button used -> refresh the data
         if(id == R.id.action_refresh){
-            new FetchWeatherTask().execute("94043"); // with postal code
+
+            updateWeather();
             Log.i(LOG_TAG,"Refresh Executed");
             return true;
             //The if returned true the click event will be consumed by the onOptionsItemSelect() call and
             // won't fall through to other item click functions.
             // If your return false it may check the ID of the event in other item selection functions.
         }
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -75,6 +80,7 @@ public class ForecastFragment extends Fragment {
 
         // Create some dummy data for the ListView.  Here's a sample weekly forecast
 
+        /*
         String[] data = {
                 "Mon 6/23 - Sunny - 31/17",
                 "Tue 6/24 - Foggy - 21/8",
@@ -84,8 +90,9 @@ public class ForecastFragment extends Fragment {
                 "Sat 6/28 - TRAPPED IN WEATHERSTATION - 23/18",
                 "Sun 6/29 - Sunny - 20/7"
         };
-
-        List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
+        */
+      //  List<String> weekForecast = new ArrayList<String>(Arrays.asList(data));
+        List<String> weekForecast = new ArrayList<String>();
 
 
         // Now that we have some dummy forecast data, create an ArrayAdapter.
@@ -159,6 +166,24 @@ public class ForecastFragment extends Fragment {
     }
 
 
+
+
+    private void updateWeather(){
+        // get location from shared preferences
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        // if not set get default
+        String sharedLocation = sharedPref.getString(getString(R.string.pref_location_key),getString(R.string.pref_location_default));
+        Log.i(sharedPref.getClass().toString(), "Shared location passed is: "+sharedLocation);
+        new FetchWeatherTask().execute(sharedLocation); // with postal code shared in shared Preferences
+        // new FetchWeatherTask().execute("94043"); // with postal code
+    }
+
+
+    @Override
+    public void onStart(){
+        super.onStart();
+        updateWeather();
+    }
 
 
     public class FetchWeatherTask extends AsyncTask<String,Void,String[]> {
