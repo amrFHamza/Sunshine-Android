@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- used in settings Temperature Unit -->
+    <string-array name="pref_temperatureUnit_array_entries">
+        <item>@string/pref_temperatureUnit_metric_label</item>
+        <item>@string/pref_temperatureUnit_imperial_label</item>
+    </string-array>
+
+    <string-array name="pref_temperatureUnit_array_values">
+        <item>@string/pref_temperatureUnit_metric_value</item>
+        <item>@string/pref_temperatureUnit_imperial_value</item>
+    </string-array>
+
+</resources>

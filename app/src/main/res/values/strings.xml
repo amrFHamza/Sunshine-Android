@@ -7,7 +7,8 @@
     <!-- Actions -->
     <string name="action_settings">Settings</string>
     <string name="action_refresh" translatable="false">Refresh</string>
-
+    <string name="action_map" translatable="false">Map Location</string>
+    <string name="action_share" translatable="false">Share</string>
     <!-- Activities titles -->
     <string name="title_activity_detail">Details</string>
     <string name="title_activity_settings">Settings</string>
@@ -16,6 +17,18 @@
     <string name="pref_location_label">Location</string>
     <string name="pref_location_key" translatable="false">location</string>
     <string name="pref_location_default" translatable="false">94043</string>
+
+    <!-- used in settings Temperature Unit -->
+    <string name="pref_temperatureUnit_label">Temperature Unit</string>
+    <string name="pref_temperatureUnit_key" translatable="false">temperatureUnit</string>
+    <string name="pref_temperatureUnit_default" translatable="false">metric</string>
+
+    <string name="pref_temperatureUnit_metric_label" translatable="false">Metric Unit</string>
+    <string name="pref_temperatureUnit_imperial_label" translatable="false">Imperial Unit</string>
+
+    <string name="pref_temperatureUnit_metric_value" translatable="false">metric</string>
+    <string name="pref_temperatureUnit_imperial_value" translatable="false">imperial</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

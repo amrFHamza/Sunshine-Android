@@ -4,9 +4,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.ShareActionProvider;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +18,6 @@ import android.widget.TextView;
 
 
 public class DetailActivity extends ActionBarActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,9 +53,7 @@ public class DetailActivity extends ActionBarActivity {
             return true;
         }
 
-
-
-        return super.onOptionsItemSelected(item);
+     return super.onOptionsItemSelected(item);
     }
 
     /**
@@ -61,8 +61,16 @@ public class DetailActivity extends ActionBarActivity {
      */
     public static class DetailFragment extends Fragment {
 
+        // member forecast string
+        private String mForecast;
+        private static final String FORECAST_SHARE_HASHTAG = "#SunShineApp";
+        private static final String LOG_TAG = DetailFragment.class.getSimpleName();
+
+
         public DetailFragment() {
+            setHasOptionsMenu(true);
         }
+
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -71,16 +79,41 @@ public class DetailActivity extends ActionBarActivity {
 
             // get the intent data in the DetailActivity (from the intent delivered me here)
             Intent intent = getActivity().getIntent();
-            String forecastMsg = intent.getStringExtra(intent.EXTRA_TEXT);
 
+            //====================================================
+            mForecast = intent.getStringExtra(intent.EXTRA_TEXT);
+            //====================================================
 
             //text view
             Context context = getActivity();
             TextView textView = new TextView(context);
             textView.setTextSize(40);
-            textView.setText(forecastMsg);
-            ((TextView) rootView.findViewById(R.id.forecast_detail)).setText(forecastMsg);
+            textView.setText(mForecast);
+            ((TextView) rootView.findViewById(R.id.forecast_detail)).setText(mForecast);
             return rootView;
         }
+
+        public void onCreateOptionsMenu(Menu menu,MenuInflater inflater){
+            inflater.inflate(R.menu.detailfragment,menu);
+            MenuItem menuItem = menu.findItem(R.id.action_share);
+            ShareActionProvider mShareActionProvider = (ShareActionProvider) MenuItemCompat.getActionProvider(menuItem);
+            //solution could be here http://stackoverflow.com/questions/19358510/why-menuitemcompat-getactionprovider-returns-null
+            if(mShareActionProvider != null){
+                mShareActionProvider.setShareIntent(createForecastShareIntent());
+            }else{
+                Log.d(LOG_TAG, "Share Action Provider is NULL!");
+            }
+
+        }
+
+        private Intent createForecastShareIntent(){
+            Intent shareIntent = new Intent(Intent.ACTION_SEND);
+            shareIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+            shareIntent.setType("text/plain");
+            shareIntent.putExtra(Intent.EXTRA_TEXT,mForecast + FORECAST_SHARE_HASHTAG);
+            return shareIntent;
+        }
+
+
     }
 }

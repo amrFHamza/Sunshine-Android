@@ -74,70 +74,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="ForecastFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.535714" vertical-offset="1137" max-vertical-offset="3230">
+              <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
+              <folding>
+                <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="e#3061#3130#0" expanded="false" />
+                <element signature="e#4245#4317#0" expanded="false" />
+                <element signature="e#5228#5229#0" expanded="true" />
+                <element signature="e#5264#5375#0" expanded="false" />
+                <element signature="e#6290#6327#0" expanded="true" />
+                <element signature="e#6328#6369#0" expanded="true" />
+                <element signature="e#6432#6476#0" expanded="true" />
+                <element signature="e#6477#6525#0" expanded="true" />
+                <element signature="method#onStart#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="e#7826#7901#0" expanded="false" />
+                <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="e#9642#9724#0" expanded="false" />
+                <element signature="e#10926#10990#0" expanded="false" />
+                <element signature="e#11644#11723#0" expanded="false" />
+                <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+                <element signature="e#12796#12850#0" expanded="false" />
+                <element signature="e#13386#13435#0" expanded="false" />
+                <element signature="e#14584#14740#0" expanded="false" />
+                <element signature="e#15133#15181#0" expanded="false" />
+                <element signature="e#15737#15815#0" expanded="false" />
+                <element signature="e#16481#16567#0" expanded="false" />
+                <element signature="e#17509#17546#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailfragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detailfragment.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="e#238#260#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DetailActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.6465201" vertical-offset="1579" max-vertical-offset="2125">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2221#2222#0" expanded="true" />
+                <element signature="e#2268#2269#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="527">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state vertical-scroll-proportion="-6.12" vertical-offset="17" max-vertical-offset="748">
+              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForecastFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
+      <file leaf-file-name="detail.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detail.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="849" max-vertical-offset="1326">
-              <caret line="412" column="9" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
-              <folding>
-                <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="e#3034#3042#0" expanded="true" />
-                <element signature="e#4025#5234#0" expanded="true" />
-                <element signature="e#5219#5220#0" expanded="true" />
-                <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="e#6281#6318#0" expanded="true" />
-                <element signature="e#6319#6360#0" expanded="true" />
-                <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="e#6968#7034#0" expanded="false" />
-                <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="e#8847#8929#0" expanded="false" />
-                <element signature="e#10129#10193#0" expanded="false" />
-                <element signature="e#10847#10926#0" expanded="false" />
-                <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-                <element signature="e#11636#11690#0" expanded="false" />
-                <element signature="e#12226#12275#0" expanded="false" />
-                <element signature="e#14573#14651#0" expanded="false" />
-                <element signature="e#15315#15401#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SettingsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/SettingsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="1224">
-              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1162#1199#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pref_general.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37037036" vertical-offset="67" max-vertical-offset="391">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -826,7 +842,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item_forecast.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/forecastfragment.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/fragment_detail.java" />
@@ -834,12 +849,16 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/menu/forecastfragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/SettingsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/detailfragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java" />
       </list>
     </option>
   </component>
@@ -957,8 +976,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -1001,6 +1020,42 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sunshine-Version-2" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Sunshine-Version-2" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="menu" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1051,7 +1106,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1282,17 +1337,17 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29727685" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4003407" sideWeight="0.39183056" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51107323" sideWeight="0.2397882" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.42435703" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4003407" sideWeight="0.60816944" order="7" side_tool="true" content_ui="tabs" x="22" y="268" width="1322" height="191" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51107323" sideWeight="0.7602118" order="7" side_tool="true" content_ui="tabs" x="22" y="268" width="1322" height="191" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4003407" sideWeight="0.60816944" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24962178" sideWeight="0.49914822" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75298125" sideWeight="0.66414523" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5741056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5741056" sideWeight="0.54689866" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1350,121 +1405,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="6749">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
-            <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/values-v23/values-v23.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="612">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="595">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/forecastfragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4097">
-          <caret line="319" column="29" selection-start-line="319" selection-start-column="29" selection-end-line="319" selection-end-column="29" />
-          <folding>
-            <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
-            <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_forecast.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="340">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1475,60 +1423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
           <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1879" max-vertical-offset="2346">
-          <caret line="352" column="0" selection-start-line="352" selection-start-column="0" selection-end-line="352" selection-end-column="0" />
-          <folding>
-            <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
-            <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
-            <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item_forecast.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="340">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/forecastfragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="221">
-          <caret line="3" column="46" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1540,28 +1434,31 @@
             <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
+            <element signature="e#3061#3130#0" expanded="false" />
+            <element signature="e#4245#4317#0" expanded="false" />
+            <element signature="e#5228#5229#0" expanded="true" />
+            <element signature="e#5264#5375#0" expanded="false" />
+            <element signature="e#6290#6327#0" expanded="true" />
+            <element signature="e#6328#6369#0" expanded="true" />
+            <element signature="e#6432#6476#0" expanded="true" />
+            <element signature="e#6477#6525#0" expanded="true" />
+            <element signature="method#onStart#0;class#ForecastFragment#0" expanded="false" />
             <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+            <element signature="e#7826#7901#0" expanded="false" />
             <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
+            <element signature="e#9642#9724#0" expanded="false" />
+            <element signature="e#10926#10990#0" expanded="false" />
+            <element signature="e#11644#11723#0" expanded="false" />
             <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
+            <element signature="e#12796#12850#0" expanded="false" />
+            <element signature="e#13386#13435#0" expanded="false" />
+            <element signature="e#14584#14740#0" expanded="false" />
+            <element signature="e#15133#15181#0" expanded="false" />
+            <element signature="e#15737#15815#0" expanded="false" />
+            <element signature="e#16481#16567#0" expanded="false" />
+            <element signature="e#17509#17546#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1577,7 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1585,7 +1481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="289">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1605,28 +1500,31 @@
             <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
+            <element signature="e#3061#3130#0" expanded="false" />
+            <element signature="e#4245#4317#0" expanded="false" />
+            <element signature="e#5228#5229#0" expanded="true" />
+            <element signature="e#5264#5375#0" expanded="false" />
+            <element signature="e#6290#6327#0" expanded="true" />
+            <element signature="e#6328#6369#0" expanded="true" />
+            <element signature="e#6432#6476#0" expanded="true" />
+            <element signature="e#6477#6525#0" expanded="true" />
+            <element signature="method#onStart#0;class#ForecastFragment#0" expanded="false" />
             <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+            <element signature="e#7826#7901#0" expanded="false" />
             <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
+            <element signature="e#9642#9724#0" expanded="false" />
+            <element signature="e#10926#10990#0" expanded="false" />
+            <element signature="e#11644#11723#0" expanded="false" />
             <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
+            <element signature="e#12796#12850#0" expanded="false" />
+            <element signature="e#13386#13435#0" expanded="false" />
+            <element signature="e#14584#14740#0" expanded="false" />
+            <element signature="e#15133#15181#0" expanded="false" />
+            <element signature="e#15737#15815#0" expanded="false" />
+            <element signature="e#16481#16567#0" expanded="false" />
+            <element signature="e#17509#17546#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1635,7 +1533,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="816">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#1901#1938#0" expanded="true" />
+            <element signature="e#1939#1980#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1654,7 +1556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1679,13 +1580,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="92.89802" vertical-offset="0" max-vertical-offset="101796">
-          <caret line="2069" column="16" selection-start-line="2069" selection-start-column="16" selection-end-line="2069" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1759,19 +1653,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4347826" vertical-offset="0" max-vertical-offset="391">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/content/Intent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33152175" vertical-offset="50759" max-vertical-offset="127449">
-          <caret line="3057" column="31" selection-start-line="3057" selection-start-column="31" selection-end-line="3057" selection-end-column="31" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
@@ -1789,28 +1674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.148148" vertical-offset="0" max-vertical-offset="238">
           <caret line="5" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22442244" vertical-offset="0" max-vertical-offset="303">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/forecastfragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#227#251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1821,7 +1684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19927536" vertical-offset="64" max-vertical-offset="340">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1832,6 +1694,144 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.307971" vertical-offset="0" max-vertical-offset="276">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/preference/PreferenceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51520574" vertical-offset="24821" max-vertical-offset="25483">
+          <caret line="1544" column="52" selection-start-line="1544" selection-start-column="49" selection-end-line="1544" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/com/android/internal/os/ZygoteInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="14359" max-vertical-offset="14790">
+          <caret line="898" column="0" selection-start-line="898" selection-start-column="0" selection-end-line="898" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5315" max-vertical-offset="6681">
+          <caret line="374" column="26" selection-start-line="374" selection-start-column="26" selection-end-line="374" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1915" max-vertical-offset="4675">
+          <caret line="134" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1359" max-vertical-offset="12699">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="35303" max-vertical-offset="85918">
+          <caret line="2250" column="0" selection-start-line="2250" selection-start-column="0" selection-end-line="2250" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/app/Instrumentation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17470" max-vertical-offset="31280">
+          <caret line="1104" column="0" selection-start-line="1104" selection-start-column="0" selection-end-line="1104" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="97018" max-vertical-offset="101796">
+          <caret line="5936" column="0" selection-start-line="5936" selection-start-column="0" selection-end-line="5936" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/preference/Preference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11214" max-vertical-offset="29750">
+          <caret line="729" column="0" selection-start-line="729" selection-start-column="0" selection-end-line="729" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+          <folding>
+            <element signature="e#357#388#0" expanded="false" />
+            <element signature="e#630#666#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/arrays.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/SettingsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42218247" vertical-offset="682" max-vertical-offset="1241">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="952">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="method#onOptionsItemSelected#0;class#MainActivity#0" expanded="false" />
+            <element signature="e#1901#1938#0" expanded="true" />
+            <element signature="e#1939#1980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="306">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="e#265#290#0" expanded="false" />
+            <element signature="e#418#438#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/content/Intent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030411448" vertical-offset="61455" max-vertical-offset="127449">
+          <caret line="3680" column="28" selection-start-line="3680" selection-start-column="28" selection-end-line="3680" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/forecastfragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21288015" vertical-offset="0" max-vertical-offset="559">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1839,107 +1839,86 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33663365" vertical-offset="0" max-vertical-offset="303">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1716172" vertical-offset="257" max-vertical-offset="816">
-          <caret line="36" column="19" selection-start-line="29" selection-start-column="8" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-21/android/preference/PreferenceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51520574" vertical-offset="24821" max-vertical-offset="25483">
-          <caret line="1544" column="52" selection-start-line="1544" selection-start-column="49" selection-end-line="1544" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="527">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        <state vertical-scroll-proportion="-6.12" vertical-offset="17" max-vertical-offset="748">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
+    <entry file="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar!/android/support/v7/widget/ShareActionProvider.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1190">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.23076923" vertical-offset="442" max-vertical-offset="884">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detail.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/detailfragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding>
-            <element signature="method#onCreate#0;class#DetailActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#DetailActivity#0" expanded="false" />
+            <element signature="e#238#260#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="782">
-          <caret line="0" column="17" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/ForecastFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="849" max-vertical-offset="1326">
-          <caret line="412" column="9" selection-start-line="412" selection-start-column="9" selection-end-line="412" selection-end-column="9" />
+        <state vertical-scroll-proportion="-5.535714" vertical-offset="1137" max-vertical-offset="3230">
+          <caret line="118" column="32" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
           <folding>
             <element signature="method#ForecastFragment#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreate#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#3034#3042#0" expanded="true" />
-            <element signature="e#4025#5234#0" expanded="true" />
-            <element signature="e#5219#5220#0" expanded="true" />
-            <element signature="method#updateWeather#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6281#6318#0" expanded="true" />
-            <element signature="e#6319#6360#0" expanded="true" />
-            <element signature="method#getReadableDateString#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#6968#7034#0" expanded="false" />
+            <element signature="e#3061#3130#0" expanded="false" />
+            <element signature="e#4245#4317#0" expanded="false" />
+            <element signature="e#5228#5229#0" expanded="true" />
+            <element signature="e#5264#5375#0" expanded="false" />
+            <element signature="e#6290#6327#0" expanded="true" />
+            <element signature="e#6328#6369#0" expanded="true" />
+            <element signature="e#6432#6476#0" expanded="true" />
+            <element signature="e#6477#6525#0" expanded="true" />
+            <element signature="method#onStart#0;class#ForecastFragment#0" expanded="false" />
             <element signature="docComment;method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#formatHighLows#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
+            <element signature="e#7826#7901#0" expanded="false" />
             <element signature="docComment;method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
             <element signature="method#getWeatherDataFromJson#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#8847#8929#0" expanded="false" />
-            <element signature="e#10129#10193#0" expanded="false" />
-            <element signature="e#10847#10926#0" expanded="false" />
+            <element signature="e#9642#9724#0" expanded="false" />
+            <element signature="e#10926#10990#0" expanded="false" />
+            <element signature="e#11644#11723#0" expanded="false" />
             <element signature="method#doInBackground#0;class#FetchWeatherTask#0;class#ForecastFragment#0" expanded="false" />
-            <element signature="e#11636#11690#0" expanded="false" />
-            <element signature="e#12226#12275#0" expanded="false" />
-            <element signature="e#14573#14651#0" expanded="false" />
-            <element signature="e#15315#15401#0" expanded="false" />
+            <element signature="e#12796#12850#0" expanded="false" />
+            <element signature="e#13386#13435#0" expanded="false" />
+            <element signature="e#14584#14740#0" expanded="false" />
+            <element signature="e#15133#15181#0" expanded="false" />
+            <element signature="e#15737#15815#0" expanded="false" />
+            <element signature="e#16481#16567#0" expanded="false" />
+            <element signature="e#17509#17546#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/SettingsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/app/DetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="237" max-vertical-offset="1224">
-          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state vertical-scroll-proportion="-1.6465201" vertical-offset="1579" max-vertical-offset="2125">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1162#1199#0" expanded="true" />
+            <element signature="e#2221#2222#0" expanded="true" />
+            <element signature="e#2268#2269#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/xml/pref_general.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37037036" vertical-offset="67" max-vertical-offset="391">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>

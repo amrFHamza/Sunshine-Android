@@ -52,7 +52,7 @@ public class ForecastFragment extends Fragment {
 
     @Override //over ride this function // inflate menu
     public void onCreateOptionsMenu(Menu menu,MenuInflater inflater){
-        Log.i(LOG_TAG,"Menu Inflated");
+       // Log.i(LOG_TAG,"Menu Inflated");
         inflater.inflate(R.menu.forecastfragment,menu);
     }
 
@@ -64,12 +64,13 @@ public class ForecastFragment extends Fragment {
         if(id == R.id.action_refresh){
 
             updateWeather();
-            Log.i(LOG_TAG,"Refresh Executed");
+         //   Log.i(LOG_TAG,"Refresh Executed");
             return true;
             //The if returned true the click event will be consumed by the onOptionsItemSelect() call and
             // won't fall through to other item click functions.
             // If your return false it may check the ID of the event in other item selection functions.
         }
+
 
         return super.onOptionsItemSelected(item);
     }
@@ -117,8 +118,8 @@ public class ForecastFragment extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> a, View v, int position,
                                         long id) {
-                    Log.v(LOG_TAG,"The position of the view in the adapter: "+position);
-                    Log.v(LOG_TAG,"The row id of the item that was clicked: "+id);
+                  //  Log.v(LOG_TAG,"The position of the view in the adapter: "+position);
+                  //  Log.v(LOG_TAG,"The row id of the item that was clicked: "+id);
 
 
                     // toast constants
@@ -173,7 +174,12 @@ public class ForecastFragment extends Fragment {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
         // if not set get default
         String sharedLocation = sharedPref.getString(getString(R.string.pref_location_key),getString(R.string.pref_location_default));
-        Log.i(sharedPref.getClass().toString(), "Shared location passed is: "+sharedLocation);
+        String sharedTemperatureUnit = sharedPref.getString(getString(R.string.pref_temperatureUnit_key),getString(R.string.pref_temperatureUnit_default));
+
+        Log.i(sharedPref.getClass().toString(), "Stored Shared location passed is: "+sharedLocation);
+        Log.i(sharedPref.getClass().toString(), "Stored Shared Unit passed is: "+sharedTemperatureUnit);
+
+
         new FetchWeatherTask().execute(sharedLocation); // with postal code shared in shared Preferences
         // new FetchWeatherTask().execute("94043"); // with postal code
     }
@@ -194,20 +200,31 @@ public class ForecastFragment extends Fragment {
             // Because the API returns a unix timestamp (measured in seconds),
             // it must be converted to milliseconds in order to be converted to valid date.
             SimpleDateFormat shortenedDateFormat = new SimpleDateFormat("EEE MMM dd");
-            Log.v(LOG_TAG,"getReadableDateString is: "+shortenedDateFormat.format(time));
+           // Log.v(LOG_TAG,"getReadableDateString is: "+shortenedDateFormat.format(time));
             return shortenedDateFormat.format(time);
         }
 
         /**
          * Prepare the weather high/lows for presentation.
          */
-        private String formatHighLows(double high, double low) {
+        private String formatHighLows(double high, double low,String unitType) {
             // For presentation, assume the user doesn't care about tenths of a degree.
+
+            // if imperial
+
+            if(unitType.equals(getString(R.string.pref_temperatureUnit_imperial_value))){
+             //   Log.i(LOG_TAG,"Values Converted to "+unitType+" unit.");
+                high = (high * 1.8) + 32;
+                low = (low * 1.8) + 32;
+                // not metric nor imperial
+            }else if(!unitType.equals(getString(R.string.pref_temperatureUnit_metric_value))){
+                Log.d(LOG_TAG,unitType+" Unit type not found :(");
+            }
             long roundedHigh = Math.round(high);
             long roundedLow = Math.round(low);
 
             String highLowStr = roundedHigh + "/" + roundedLow;
-            Log.v(LOG_TAG,"FormatHighLows is: "+highLowStr);
+            //Log.v(LOG_TAG,"FormatHighLows is: "+highLowStr);
             return highLowStr;
         }
 
@@ -252,7 +269,7 @@ public class ForecastFragment extends Fragment {
 
             String[] resultStrs = new String[numDays];
 
-            Log.v(LOG_TAG,"weatherArray length is: "+weatherArray.length());
+         //   Log.v(LOG_TAG,"weatherArray length is: "+weatherArray.length());
 
             for(int i = 0; i < weatherArray.length(); i++) {
                 // For now, using the format "Day, description, hi/low"
@@ -281,12 +298,18 @@ public class ForecastFragment extends Fragment {
                 double high = temperatureObject.getDouble(OWM_MAX);
                 double low = temperatureObject.getDouble(OWM_MIN);
 
-                highAndLow = formatHighLows(high, low);
+                // if edited on settings
+                SharedPreferences sharedPreference = PreferenceManager.getDefaultSharedPreferences(getActivity());
+                String SharedUnitType = sharedPreference.getString(getString(R.string.pref_temperatureUnit_key),
+                        getString(R.string.pref_temperatureUnit_default));
+                highAndLow = formatHighLows(high, low,SharedUnitType);
+
+
                 resultStrs[i] = day + " - " + description + " - " + highAndLow;
             }
 
             for (String s : resultStrs) {
-                Log.v(LOG_TAG, "Forecast entry: " + s);
+               // Log.v(LOG_TAG, "Forecast entry: " + s);
             }
             return resultStrs;
 
@@ -333,14 +356,14 @@ public class ForecastFragment extends Fragment {
 
                      String apiUrl = builtUri.build().toString();
                  //   URL url = new URL("http://api.openweathermap.org/data/2.5/forecast/daily?q=94043&mode=json&units=metric&cnt=7&APPID=b039b19820b4668ddb153061f7066fe3");
-                    Log.v(LOG_TAG, "API URL: "+apiUrl);
+                 //   Log.v(LOG_TAG, "API URL: "+apiUrl);
                     URL url = new URL(apiUrl);
 
                     // Create the request to OpenWeatherMap, and open the connection
                     urlConnection = (HttpURLConnection) url.openConnection();
                     urlConnection.setRequestMethod("GET");
                     urlConnection.connect();
-                    Log.i(LOG_TAG, "HttpURLConnection OPENNED ");
+                   // Log.i(LOG_TAG, "HttpURLConnection OPENNED ");
                     // Read the input stream into a String
                     InputStream inputStream = urlConnection.getInputStream();
                     StringBuffer buffer = new StringBuffer();
@@ -363,7 +386,7 @@ public class ForecastFragment extends Fragment {
                         return null;
                     }
                     forecastJsonStr = buffer.toString();
-                    Log.v(LOG_TAG, "forecastJsonStr is: "+ forecastJsonStr);
+                //    Log.v(LOG_TAG, "forecastJsonStr is: "+ forecastJsonStr);
 
 
 
@@ -401,8 +424,8 @@ public class ForecastFragment extends Fragment {
 
         @Override
         protected void onPostExecute(String[] results) {
-            Log.v(LOG_TAG, "onPostExecute!");
-            Log.v(LOG_TAG, "Super is: " + super.getClass().getSimpleName());
+          //  Log.v(LOG_TAG, "onPostExecute!");
+           // Log.v(LOG_TAG, "Super is: " + super.getClass().getSimpleName());
 
             if (results != null) {
                mForecastAdapter.clear();  //to clear the adapter each run //referesh
@@ -414,4 +437,5 @@ public class ForecastFragment extends Fragment {
     }
 
     }
+
 
