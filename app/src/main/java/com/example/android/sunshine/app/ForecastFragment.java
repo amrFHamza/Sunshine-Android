@@ -52,11 +52,11 @@ public class ForecastFragment extends Fragment {
 
     @Override //over ride this function // inflate menu
     public void onCreateOptionsMenu(Menu menu,MenuInflater inflater){
-       // Log.i(LOG_TAG,"Menu Inflated");
+//       Log.i(LOG_TAG,"Menu Inflated");
         inflater.inflate(R.menu.forecastfragment,menu);
     }
 
-    @Override
+    @Override   //for refresh action as on item in menu
     public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
 
@@ -64,7 +64,7 @@ public class ForecastFragment extends Fragment {
         if(id == R.id.action_refresh){
 
             updateWeather();
-         //   Log.i(LOG_TAG,"Refresh Executed");
+//            Log.i(LOG_TAG,"Refresh Executed");
             return true;
             //The if returned true the click event will be consumed by the onOptionsItemSelect() call and
             // won't fall through to other item click functions.
@@ -75,7 +75,7 @@ public class ForecastFragment extends Fragment {
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
+    @Override    // all main staff regarding the list view
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -118,8 +118,8 @@ public class ForecastFragment extends Fragment {
                 @Override
                 public void onItemClick(AdapterView<?> a, View v, int position,
                                         long id) {
-                  //  Log.v(LOG_TAG,"The position of the view in the adapter: "+position);
-                  //  Log.v(LOG_TAG,"The row id of the item that was clicked: "+id);
+//                   Log.v(LOG_TAG,"The position of the view in the adapter: "+position);
+//                   Log.v(LOG_TAG,"The row id of the item that was clicked: "+id);
 
 
                     // toast constants
@@ -168,7 +168,7 @@ public class ForecastFragment extends Fragment {
 
 
 
-
+    // get shared preferences configuration location and temp unit and execute FetchWeatherTask based on the shared location
     private void updateWeather(){
         // get location from shared preferences
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(getActivity());
@@ -176,8 +176,8 @@ public class ForecastFragment extends Fragment {
         String sharedLocation = sharedPref.getString(getString(R.string.pref_location_key),getString(R.string.pref_location_default));
         String sharedTemperatureUnit = sharedPref.getString(getString(R.string.pref_temperatureUnit_key),getString(R.string.pref_temperatureUnit_default));
 
-        Log.i(sharedPref.getClass().toString(), "Stored Shared location passed is: "+sharedLocation);
-        Log.i(sharedPref.getClass().toString(), "Stored Shared Unit passed is: "+sharedTemperatureUnit);
+//        Log.i(sharedPref.getClass().toString(), "Stored Shared location passed is: "+sharedLocation);
+//        Log.i(sharedPref.getClass().toString(), "Stored Shared Unit passed is: "+sharedTemperatureUnit);
 
 
         new FetchWeatherTask().execute(sharedLocation); // with postal code shared in shared Preferences
@@ -185,6 +185,7 @@ public class ForecastFragment extends Fragment {
     }
 
 
+    // call for update weather
     @Override
     public void onStart(){
         super.onStart();
@@ -229,6 +230,7 @@ public class ForecastFragment extends Fragment {
         }
 
 
+        // format json data as strings
         /**
          * Take the String representing the complete forecast in JSON Format and
          * pull out the data we need to construct the Strings needed for the wireframes.
@@ -309,12 +311,13 @@ public class ForecastFragment extends Fragment {
             }
 
             for (String s : resultStrs) {
-               // Log.v(LOG_TAG, "Forecast entry: " + s);
+              // Log.v(LOG_TAG, "Forecast entry: " + s);
             }
             return resultStrs;
 
         }
 
+        //get json datafrom API and pass it getWeatherDataFromJson
        @Override
         protected String[] doInBackground(String... params) {
                 // These two need to be declared outside the try/catch
@@ -348,7 +351,7 @@ public class ForecastFragment extends Fragment {
 
 
                     Uri.Builder builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
-                            .appendQueryParameter(QUERY_PARAM,params[0])
+                            .appendQueryParameter(QUERY_PARAM,params[0])  // location code
                             .appendQueryParameter(MODE_PARAM,format)
                             .appendQueryParameter(UNITS_PARAM,units)
                             .appendQueryParameter(DAYS_PARAM,Integer.toString(numDays)) //gets String
@@ -356,14 +359,14 @@ public class ForecastFragment extends Fragment {
 
                      String apiUrl = builtUri.build().toString();
                  //   URL url = new URL("http://api.openweathermap.org/data/2.5/forecast/daily?q=94043&mode=json&units=metric&cnt=7&APPID=b039b19820b4668ddb153061f7066fe3");
-                 //   Log.v(LOG_TAG, "API URL: "+apiUrl);
+                   //Log.v(LOG_TAG, "API URL: "+apiUrl);
                     URL url = new URL(apiUrl);
 
                     // Create the request to OpenWeatherMap, and open the connection
                     urlConnection = (HttpURLConnection) url.openConnection();
                     urlConnection.setRequestMethod("GET");
                     urlConnection.connect();
-                   // Log.i(LOG_TAG, "HttpURLConnection OPENNED ");
+                    //Log.i(LOG_TAG, "HttpURLConnection OPENNED ");
                     // Read the input stream into a String
                     InputStream inputStream = urlConnection.getInputStream();
                     StringBuffer buffer = new StringBuffer();
@@ -386,7 +389,7 @@ public class ForecastFragment extends Fragment {
                         return null;
                     }
                     forecastJsonStr = buffer.toString();
-                //    Log.v(LOG_TAG, "forecastJsonStr is: "+ forecastJsonStr);
+                   // Log.v(LOG_TAG, "forecastJsonStr is: "+ forecastJsonStr);
 
 
 
@@ -399,7 +402,7 @@ public class ForecastFragment extends Fragment {
                 } finally {
                     if (urlConnection != null) {
                         urlConnection.disconnect();
-                        Log.i(LOG_TAG, "CONNECTION CLOSED ");
+                       // Log.i(LOG_TAG, "CONNECTION CLOSED ");
 
                     }
                     if (reader != null) {
@@ -422,9 +425,10 @@ public class ForecastFragment extends Fragment {
             }
 
 
+        //pass json strings data (resutls is the returned data from doInBackground) and pass to adapter array mForecastAdapter
         @Override
         protected void onPostExecute(String[] results) {
-          //  Log.v(LOG_TAG, "onPostExecute!");
+           // Log.v(LOG_TAG, "onPostExecute!");
            // Log.v(LOG_TAG, "Super is: " + super.getClass().getSimpleName());
 
             if (results != null) {
