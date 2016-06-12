@@ -68,8 +68,12 @@ public class WeatherProvider extends ContentProvider {
                     "." + WeatherContract.LocationEntry.COLUMN_LOCATION_SETTING + " = ? AND " +
                     WeatherContract.WeatherEntry.COLUMN_DATE + " = ? ";
 
+
+
     private Cursor getWeatherByLocationSetting(Uri uri, String[] projection, String sortOrder) {
+        // get the location string
         String locationSetting = WeatherContract.WeatherEntry.getLocationSettingFromUri(uri);
+        //get date from uri
         long startDate = WeatherContract.WeatherEntry.getStartDateFromUri(uri);
 
         String[] selectionArgs;
@@ -84,13 +88,22 @@ public class WeatherProvider extends ContentProvider {
         }
 
         return sWeatherByLocationSettingQueryBuilder.query(mOpenHelper.getReadableDatabase(),
-                projection,
-                selection,
-                selectionArgs,
+                projection, //column to select
+                selection, //where
+                selectionArgs,  //group by
                 null,
                 null,
                 sortOrder
         );
+//
+//        String buildQuery (String[] projectionIn,
+//                String selection,
+//                String groupBy,
+//                String having,
+//                String sortOrder,
+
+
+
     }
 
     private Cursor getWeatherByLocationSettingAndDate(
@@ -143,7 +156,7 @@ public class WeatherProvider extends ContentProvider {
 
     /*
         Students: We've coded this for you.  We just create a new WeatherDbHelper for later use
-        here.
+          here.
      */
     @Override
     public boolean onCreate() {
@@ -163,15 +176,23 @@ public class WeatherProvider extends ContentProvider {
         final int match = sUriMatcher.match(uri);
 
         switch (match) {
+            //CONTENT_TYPE TO RETURN MULTIPLE ITEM
+            //BUT CONTENT_ITEM_TYPE TO RETURN ONLY SINGLE ITEM
+
+            //you are the designer and by logic in case data and location, it should only returns one single item
+            // and so it should return vendor type:
+            // vnd.android.cursor.item[dir]/com.example.sunshine.app/weather
             // Student: Uncomment and fill out these two cases
-//            case WEATHER_WITH_LOCATION_AND_DATE:
-//            case WEATHER_WITH_LOCATION:
+            case WEATHER_WITH_LOCATION_AND_DATE:
+                return WeatherContract.WeatherEntry.CONTENT_ITEM_TYPE;
+            case WEATHER_WITH_LOCATION:
+                return WeatherContract.WeatherEntry.CONTENT_TYPE;
             case WEATHER:
                 return WeatherContract.WeatherEntry.CONTENT_TYPE;
             case LOCATION:
                 return WeatherContract.LocationEntry.CONTENT_TYPE;
             default:
-                throw new UnsupportedOperationException("Unknown uri: " + uri);
+                throw new UnsupportedOperationException("Unknown uri: 1" + uri);
         }
     }
 
@@ -195,12 +216,28 @@ public class WeatherProvider extends ContentProvider {
             }
             // "weather"
             case WEATHER: {
-                retCursor = null;
+                retCursor = mOpenHelper.getReadableDatabase().query(
+                        WeatherContract.WeatherEntry.TABLE_NAME,
+                        projection,
+                        selection,
+                        selectionArgs,
+                        null,
+                        null,
+                        sortOrder
+                );
                 break;
             }
             // "location"
             case LOCATION: {
-                retCursor = null;
+                retCursor = mOpenHelper.getReadableDatabase().query(
+                        WeatherContract.LocationEntry.TABLE_NAME,
+                        projection,
+                        selection,
+                        selectionArgs,
+                        null,
+                        null,
+                        sortOrder
+                );
                 break;
             }
 
